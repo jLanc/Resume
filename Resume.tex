@@ -1,0 +1,172 @@
+\documentclass[11pt,a4paper,roman]{moderncv}
+
+% modern themes
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\nopagenumbers{}
+
+% character encoding
+\usepackage[utf8]{inputenc}
+% Remove fontspec and use fontawesome5 instead of fontawesome
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+
+% personal data
+\name{Jake}{Lancaster}
+\address{2/77 Diagonal road}{Somerton Park SA 5044}
+
+% Keep the custom commands from the original template
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+\begin{document}
+\makecvtitle
+\vspace*{-15mm}
+
+\begin{center}
+\begin{tabular}{ c c c }
+ \faEnvelope\enspace jake.5330@hotmail.com & \faGithub\enspace github.com/jLanc & \faMobile\enspace 0409 204 914\\  
+\end{tabular}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{EXPERIENCE}
+
+{\customcventry{2024 (December) - 2025 (February)}{Technical Lead}{IOTech Systems}{Newcastle upon Tyne, United Kingdom}{}
+{\begin{itemize}
+  \item Led technical product delivery and sprint planning
+  \item Managed feature timelines and critical incidents
+  \item Provided mentoring and technical guidance
+  \item Coordinated with management and stakeholders
+  \item Live customer demos
+\end{itemize} }
+}
+{\customcventry{2022 - 2024}{Senior Software Engineer}{}{}{}
+{\begin{itemize}
+  \item Designed and delivered scalable features for edge IoT management platform
+  \item Built offline Linux package installation feature for air-gapped environments
+  \item Developed Docker-based product scale testing environment
+  \item Identified and resolved technical challenges in customer projects
+  \item Acted as interim Technical Lead and supported teams
+\end{itemize} }
+}
+{\customcventry{2020 - 2022}{Software Engineer}{}{}{}
+{\begin{itemize}
+  \item Developed scalable system features for industrial IoT environments
+  \item Supported customer projects, providing technical solutions and guidance
+  \item Performed code reviews with focus on performance and reliability
+\end{itemize} }
+}
+{\customcventry{2019 - 2020}{Graduate Software Engineer}{}{}{}
+{\begin{itemize}
+  \item Delivered production-ready code for greenfield project
+  \item Evaluated and integrated third-party technologies and tooling
+  \item Assisted with testing, debugging, and documentation
+  \item Helped with team knowledge sharing and onboarding
+\end{itemize} }
+}
+
+\vspace{1em} % <-- Adds the gap after IOTech Systems
+
+{\customcventry{2017 - 2018 (3 Months)}{Intern}{Australian Signals Directorate}{Canberra, ACT}{}
+{\begin{itemize}
+  \item Self-inspired research and development of novel malware detection techniques
+  \item Developed new techniques to represent existing data sets to help identify similar malware samples
+\end{itemize} }
+}
+
+{\customcventry{2013 - 2015}{IT Technician}{Riverland Computers}{SA}{}
+{\begin{itemize}
+  \item Managed IT infrastructure for newspaper company across 4 sites
+  \item Provided on-site technical support and advice for public and business clients
+  \item Maintained mission-critical servers, staff computers, and network infrastructure
+\end{itemize} }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{EDUCATION}
+{\customcventry{2018 - 2019}{Flinders University}{Honours of Science (Computer Science)}{Adelaide, SA}{}{}}
+{\customcventry{2015 - 2018}{Flinders University}{Bachelor of Computer Science}{Adelaide, SA}{}{}}
+{\customcventry{2011 - 2014}{TAFE}{Certificate II \& III in Networking}{Berri, SA}{}{}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{PROJECTS}
+
+{\customcvproject{PDF Software Migration}{2013 - 2015}
+{\begin{itemize}
+  \item example
+\end{itemize}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{SKILLS \& COMPETENCIES}
+\begin{minipage}{\maincolumnwidth}%
+\small{
+\begin{itemize}
+  \item Languages \& Tools: Golang, Bash, SQL, Docker, Jenkins, GitHub, REST, GraphQL, Goland
+  \item Cloud \& Infrastructure: Google Cloud, Linux, Networking
+   \item Past Technical: C, C\#, C++, firmware builds
+  \item Practices: Agile, CI/CD, Code Reviews, Testing
+  \item Soft Skills: Team Leadership, Project Management, Customer Support 
+\end{itemize}}%
+\end{minipage}%
+
+\section{INTERESTS}
+\begin{minipage}{\maincolumnwidth}%
+\small{Deep Space Astrophotography, Space, Motorsport, Radio Communications}%
+\end{minipage}%
+
+\end{document}
